@@ -409,7 +409,7 @@
 
             _self.auth0
               .loginWithPopup({
-                redirect_uri: 'https://cdn.jsdelivr.net/gh/mmaddex/ubiquitous-funicular/index.html/callback.html'
+                redirect_uri: 'https://splaground.onrender.com/callback.html'
               })
               .then(function () {
                 auth0.isAuthenticated().then(function (isAuthenticated) {
@@ -420,7 +420,7 @@
           },
           loginRedirect: function () {
             this.auth0.loginWithRedirect({
-              redirect_uri: 'https://cdn.jsdelivr.net/gh/mmaddex/ubiquitous-funicular/index.html'
+              redirect_uri: 'https://splaground.onrender.com/'
             });
           },
           loginHandleRedirectCallback: function () {
@@ -477,13 +477,13 @@
           },
           logout: function () {
             this.auth0.logout({
-              returnTo: 'https://cdn.jsdelivr.net/gh/mmaddex/ubiquitous-funicular/index.html'
+              returnTo: 'https://splaground.onrender.com/'
             });
           },
           logoutNoClient: function () {
             this.auth0.logout({
               client_id: null,
-              returnTo: 'https://cdn.jsdelivr.net/gh/mmaddex/ubiquitous-funicular/index.html'
+              returnTo: 'https://splaground.onrender.com/'
             });
           }
         }
